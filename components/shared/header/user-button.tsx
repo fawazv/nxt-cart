@@ -1,6 +1,6 @@
 import { auth } from '@/auth'
 
-import { Button, buttonVariants } from '@/components/ui/Button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,

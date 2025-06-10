@@ -7,7 +7,7 @@ import SeparatorWithOr from '@/components/shared/separator-or'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 import CredentialsSignInForm from './credentials-signin-form'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { APP_NAME } from '@/lib/constants'
 import { GoogleSignInForm } from './google-signin-form'
 
