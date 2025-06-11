@@ -3,7 +3,7 @@
 import { useFormStatus } from 'react-dom'
 
 import { SignInWithGoogle } from '@/lib/actions/user.actions'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 
 export function GoogleSignInForm() {
   const SignInButton = () => {

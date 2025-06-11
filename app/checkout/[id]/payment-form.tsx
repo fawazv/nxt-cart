@@ -16,7 +16,7 @@ import { formatDateTime } from '@/lib/utils'
 
 import CheckoutFooter from '../checkout-footer'
 import { redirect, useRouter } from 'next/navigation'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import ProductPrice from '@/components/shared/product/product-price'
 
 export default function OrderPaymentForm({

@@ -19,9 +19,8 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { UserSignInSchema } from '@/lib/validator'
 import { isRedirectError } from 'next/dist/client/components/redirect-error'
 import { APP_NAME } from '@/lib/constants'
-
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { Input } from '@/components/ui/Input'
+import { Button } from '@/components/ui/Button'
 
 const signInDefaultValues =
   process.env.NODE_ENV === 'development'
