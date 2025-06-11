@@ -1,8 +1,6 @@
 'use client'
 import { redirect, useSearchParams } from 'next/navigation'
 
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import Link from 'next/link'
 import {
   Form,
@@ -21,6 +19,8 @@ import { UserSignUpSchema } from '@/lib/validator'
 import { Separator } from '@/components/ui/separator'
 import { isRedirectError } from 'next/dist/client/components/redirect-error'
 import { APP_NAME } from '@/lib/constants'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 
 const signUpDefaultValues =
   process.env.NODE_ENV === 'development'
