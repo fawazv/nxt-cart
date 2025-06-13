@@ -9,7 +9,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { useTranslations } from 'next-intl'
 import { ChevronDownIcon } from 'lucide-react'
 
