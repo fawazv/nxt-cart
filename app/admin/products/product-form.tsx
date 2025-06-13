@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { Button } from '@/components/ui/Button'
+
 import { Card, CardContent } from '@/components/ui/card'
 import {
   Form,
@@ -123,7 +124,6 @@ const ProductForm = ({
   }
   const images = form.watch('images')
 
-  console.log(form.formState.errors)
   return (
     <Form {...form}>
       <form
