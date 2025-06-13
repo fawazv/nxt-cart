@@ -16,12 +16,13 @@ import {
   round2,
 } from '../utils'
 import { AVAILABLE_DELIVERY_DATES } from '../constants'
+import WebPage from './models/web-page.model'
 
 loadEnvConfig(cwd())
 
 const main = async () => {
   try {
-    const { products, users, reviews } = data
+    const { products, users, reviews, webPages } = data
 
     if (!process.env.MONGODB_URI) {
       throw new Error('MONGODB_URI is not defined in environment variables')
@@ -31,6 +32,9 @@ const main = async () => {
 
     await User.deleteMany()
     const createdUser = await User.insertMany(users)
+
+    await WebPage.deleteMany()
+    await WebPage.insertMany(webPages)
 
     await Product.deleteMany()
     const createdProducts = await Product.insertMany(products)
