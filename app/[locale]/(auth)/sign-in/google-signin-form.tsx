@@ -1,7 +1,7 @@
 'use client'
 import { useFormStatus } from 'react-dom'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 
 import { SignInWithGoogle } from '@/lib/actions/user.actions'
 

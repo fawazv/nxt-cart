@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { useRouter } from 'next/navigation'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import {
   Form,
   FormControl,
@@ -15,7 +15,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
+import { Input } from '@/components/ui/Input'
 import { useToast } from '@/hooks/use-toast'
 import { updateUserName } from '@/lib/actions/user.actions'
 import { UserNameSchema } from '@/lib/validator'

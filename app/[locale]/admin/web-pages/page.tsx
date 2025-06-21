@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import DeleteDialog from '@/components/shared/delete-dialog'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import {
   Table,
   TableBody,

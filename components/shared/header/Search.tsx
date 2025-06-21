@@ -1,6 +1,6 @@
 import { SearchIcon } from 'lucide-react'
 
-import { Input } from '@/components/ui/input'
+import { Input } from '@/components/ui/Input'
 import { getAllCategories } from '@/lib/actions/product.actions'
 
 import {

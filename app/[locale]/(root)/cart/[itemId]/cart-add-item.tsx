@@ -1,7 +1,7 @@
 'use client'
 import BrowsingHistoryList from '@/components/shared/browsing-history-list'
 import ProductPrice from '@/components/shared/product/product-price'
-import { buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/Button'
 import { Card, CardContent } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import { CheckCircle2Icon } from 'lucide-react'

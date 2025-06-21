@@ -3,7 +3,7 @@
 import Link from 'next/link'
 
 import DeleteDialog from '@/components/shared/delete-dialog'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import {
   Table,
   TableBody,
@@ -19,7 +19,7 @@ import {
 import { IProduct } from '@/lib/db/models/product.model'
 
 import React, { useEffect, useState, useTransition } from 'react'
-import { Input } from '@/components/ui/input'
+import { Input } from '@/components/ui/Input'
 import { formatDateTime, formatId } from '@/lib/utils'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 

@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { IProduct } from '@/lib/db/models/product.model'
 import Link from 'next/link'
 

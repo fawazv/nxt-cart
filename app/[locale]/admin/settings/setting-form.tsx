@@ -2,7 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { Form } from '@/components/ui/form'
 import { useToast } from '@/hooks/use-toast'
 import { SettingInputSchema } from '@/lib/validator'

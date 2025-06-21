@@ -5,7 +5,7 @@ import React from 'react'
 
 import { formUrlQuery } from '@/lib/utils'
 
-import { Button } from '../ui/button'
+import { Button } from '../ui/Button'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 

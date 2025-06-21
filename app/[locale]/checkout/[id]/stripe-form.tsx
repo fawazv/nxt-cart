@@ -6,7 +6,7 @@ import {
 } from '@stripe/react-stripe-js'
 import { FormEvent, useState } from 'react'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import ProductPrice from '@/components/shared/product/product-price'
 import useSettingStore from '@/hooks/use-setting-store'
 

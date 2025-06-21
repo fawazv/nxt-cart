@@ -8,7 +8,7 @@ import {
   CollapsibleTrigger,
 } from '../ui/collapsible'
 import useDeviceType from '@/hooks/use-device-type'
-import { Button } from '../ui/button'
+import { Button } from '../ui/Button'
 
 export default function CollapsibleOnMobile({
   title,

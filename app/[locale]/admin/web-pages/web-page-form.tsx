@@ -9,7 +9,7 @@ import { z } from 'zod'
 import MdEditor from 'react-markdown-editor-lite'
 import ReactMarkdown from 'react-markdown'
 import 'react-markdown-editor-lite/lib/index.css'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import {
   Form,
   FormControl,
@@ -18,7 +18,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
+import { Input } from '@/components/ui/Input'
 import { useToast } from '@/hooks/use-toast'
 import { createWebPage, updateWebPage } from '@/lib/actions/web-page.actions'
 import { IWebPage } from '@/lib/db/models/web-page.model'

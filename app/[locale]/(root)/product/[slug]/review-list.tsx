@@ -9,7 +9,7 @@ import { z } from 'zod'
 import { useTranslations } from 'next-intl'
 
 import Rating from '@/components/shared/product/rating'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import {
   Card,
   CardContent,
@@ -33,7 +33,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
+import { Input } from '@/components/ui/Input'
 import {
   Select,
   SelectContent,
