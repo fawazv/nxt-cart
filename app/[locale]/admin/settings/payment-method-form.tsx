@@ -54,10 +54,10 @@ export default function PaymentMethodForm({
       <CardHeader>
         <CardTitle>Payment Methods</CardTitle>
       </CardHeader>
-      <CardContent className='space-y-4'>
-        <div className='space-y-4'>
+      <CardContent className="space-y-4">
+        <div className="space-y-4">
           {fields.map((field, index) => (
-            <div key={field.id} className='flex   gap-2'>
+            <div key={field.id} className="flex   gap-2">
               <FormField
                 control={form.control}
                 name={`availablePaymentMethods.${index}.name`}
@@ -65,7 +65,7 @@ export default function PaymentMethodForm({
                   <FormItem>
                     {index == 0 && <FormLabel>Name</FormLabel>}
                     <FormControl>
-                      <Input {...field} placeholder='Name' />
+                      <Input {...field} placeholder="Name" />
                     </FormControl>
                     <FormMessage>
                       {errors.availablePaymentMethods?.[index]?.name?.message}
@@ -80,7 +80,7 @@ export default function PaymentMethodForm({
                   <FormItem>
                     {index == 0 && <FormLabel>Commission</FormLabel>}
                     <FormControl>
-                      <Input {...field} placeholder='Commission' />
+                      <Input {...field} placeholder="Commission" />
                     </FormControl>
                     <FormMessage>
                       {
@@ -94,22 +94,22 @@ export default function PaymentMethodForm({
               <div>
                 {index == 0 && <div>Action</div>}
                 <Button
-                  type='button'
+                  type="button"
                   disabled={fields.length === 1}
-                  variant='outline'
+                  variant="outline"
                   className={index == 0 ? 'mt-2' : ''}
                   onClick={() => {
                     remove(index)
                   }}
                 >
-                  <TrashIcon className='w-4 h-4' />
+                  <TrashIcon className="w-4 h-4" />
                 </Button>
               </div>
             </div>
           ))}
 
           <Button
-            type='button'
+            type="button"
             variant={'outline'}
             onClick={() => append({ name: '', commission: 0 })}
           >
@@ -119,7 +119,7 @@ export default function PaymentMethodForm({
 
         <FormField
           control={control}
-          name='defaultPaymentMethod'
+          name="defaultPaymentMethod"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Default PaymentMethod</FormLabel>
@@ -129,7 +129,7 @@ export default function PaymentMethodForm({
                   onValueChange={(value) => field.onChange(value)}
                 >
                   <SelectTrigger>
-                    <SelectValue placeholder='Select a payment method' />
+                    <SelectValue placeholder="Select a payment method" />
                   </SelectTrigger>
                   <SelectContent>
                     {availablePaymentMethods

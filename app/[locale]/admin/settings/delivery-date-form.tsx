@@ -54,10 +54,10 @@ export default function DeliveryDateForm({
       <CardHeader>
         <CardTitle>Delivery Dates</CardTitle>
       </CardHeader>
-      <CardContent className='space-y-4'>
-        <div className='space-y-4'>
+      <CardContent className="space-y-4">
+        <div className="space-y-4">
           {fields.map((field, index) => (
-            <div key={field.id} className='flex gap-2'>
+            <div key={field.id} className="flex gap-2">
               <FormField
                 control={form.control}
                 name={`availableDeliveryDates.${index}.name`}
@@ -65,7 +65,7 @@ export default function DeliveryDateForm({
                   <FormItem>
                     {index == 0 && <FormLabel>Name</FormLabel>}
                     <FormControl>
-                      <Input {...field} placeholder='Name' />
+                      <Input {...field} placeholder="Name" />
                     </FormControl>
                     <FormMessage>
                       {errors.availableDeliveryDates?.[index]?.name?.message}
@@ -80,7 +80,7 @@ export default function DeliveryDateForm({
                   <FormItem>
                     {index == 0 && <FormLabel>Days</FormLabel>}
                     <FormControl>
-                      <Input {...field} placeholder='daysToDeliver' />
+                      <Input {...field} placeholder="daysToDeliver" />
                     </FormControl>
                     <FormMessage>
                       {
@@ -98,7 +98,7 @@ export default function DeliveryDateForm({
                   <FormItem>
                     {index == 0 && <FormLabel>Shipping Price</FormLabel>}
                     <FormControl>
-                      <Input {...field} placeholder='shippingPrice' />
+                      <Input {...field} placeholder="shippingPrice" />
                     </FormControl>
                     <FormMessage>
                       {
@@ -116,7 +116,7 @@ export default function DeliveryDateForm({
                   <FormItem>
                     {index == 0 && <FormLabel>Free Shipping</FormLabel>}
                     <FormControl>
-                      <Input {...field} placeholder='freeShippingMinPrice' />
+                      <Input {...field} placeholder="freeShippingMinPrice" />
                     </FormControl>
                     <FormMessage>
                       {
@@ -128,24 +128,24 @@ export default function DeliveryDateForm({
                 )}
               />
               <div>
-                {index == 0 && <div className=''>Action</div>}
+                {index == 0 && <div className="">Action</div>}
                 <Button
-                  type='button'
+                  type="button"
                   disabled={fields.length === 1}
-                  variant='outline'
+                  variant="outline"
                   className={index == 0 ? 'mt-2' : ''}
                   onClick={() => {
                     remove(index)
                   }}
                 >
-                  <TrashIcon className='w-4 h-4' />
+                  <TrashIcon className="w-4 h-4" />
                 </Button>
               </div>{' '}
             </div>
           ))}
 
           <Button
-            type='button'
+            type="button"
             variant={'outline'}
             onClick={() =>
               append({
@@ -162,7 +162,7 @@ export default function DeliveryDateForm({
 
         <FormField
           control={control}
-          name='defaultDeliveryDate'
+          name="defaultDeliveryDate"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Default DeliveryDate</FormLabel>
@@ -172,7 +172,7 @@ export default function DeliveryDateForm({
                   onValueChange={(value) => field.onChange(value)}
                 >
                   <SelectTrigger>
-                    <SelectValue placeholder='Select a delivery date' />
+                    <SelectValue placeholder="Select a delivery date" />
                   </SelectTrigger>
                   <SelectContent>
                     {availableDeliveryDates
