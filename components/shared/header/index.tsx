@@ -5,6 +5,7 @@ import Menu from './menu'
 import Search from './hearch'
 import data from '@/lib/data'
 import Sidebar from './sidebar'
+
 import { getSetting } from '@/lib/actions/setting.actions'
 import { getTranslations } from 'next-intl/server'
 

@@ -1,20 +1,24 @@
-'use client'
+import { usePathname, useRouter } from '@/i18n/routing'
+import { i18n } from '@/i18n-config'
+import useSettingStore from '@/hooks/use-setting-store'
+import { useLocale, useTranslations } from 'next-intl'
+import { Button } from '../ui/Button'
 import { ChevronUp } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
-
-import { Button } from '@/components/ui/Button'
-import useSettingStore from '@/hooks/use-setting-store'
-import { Select, SelectContent, SelectItem, SelectTrigger } from '../ui/select'
-
-import { SelectValue } from '@radix-ui/react-select'
-import { useLocale, useTranslations } from 'next-intl'
-import { usePathname, useRouter } from '@/i18n/routing'
-import { i18n } from '@/i18n-config'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@radix-ui/react-select'
 
 export default function Footer() {
   const router = useRouter()
+
   const pathname = usePathname()
+
   const {
     setting: { site, availableCurrencies, currency },
     setCurrency,
