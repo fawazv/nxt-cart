@@ -90,8 +90,8 @@ This project covers **37 lessons**, from setup to advanced features:
 
 ### 1️⃣ Clone the repository  
 ```bash
-git clone <repo-url>
-cd nxtcart
+git clone https://github.com/fawazv/nxt-cart.git
+cd nxt-cart
 ```
 
 ### 2️⃣ Create Environment File  
@@ -155,20 +155,15 @@ By building nxtcart, you’ll learn how to:
 
 ## 🚀 Deployment  
 
-- Hosted on **Vercel** for serverless, scalable deployments.  
-- CI/CD setup via **GitHub Actions + Vercel integration**.  
+- Hosted on **Vercel** for serverless, scalable deployments.   
 
 ---
 
 ## 📜 License  
 
-This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute it.  
 
 ---
 
-👨‍💻 Developed with ❤️ by [Your Name]
+👨‍💻 Developed with ❤️ by Mohammed Fawaz
 
-📜 License
-This project is licensed under the MIT License.
-You are free to use, modify, and distribute it.
