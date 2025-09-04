@@ -1,37 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 nxtcart - Online Shopping App  
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)  
+[![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)](https://react.dev/)  
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)  
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)  
+[![Shadcn UI](https://img.shields.io/badge/Shadcn-UI-purple)](https://ui.shadcn.com/)  
+[![Stripe](https://img.shields.io/badge/Stripe-Payments-635bff?logo=stripe&logoColor=white)](https://stripe.com/)  
+[![PayPal](https://img.shields.io/badge/PayPal-Checkout-00457C?logo=paypal&logoColor=white)](https://paypal.com/)  
+[![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)](https://vercel.com/)  
 
-First, run the development server:
+nxtcart is a **full-stack e-commerce application** built with **Next.js 15** and **MongoDB**.  
+It provides a modern, scalable, and production-ready shopping platform with features for customers, secure authentication, order management, and an admin dashboard.  
 
+---
+
+## 🚀 Tech Stack  
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router, Server Components)  
+- **UI**: React 19, Tailwind CSS, Shadcn UI, Radix UI, Recharts  
+- **Database**: MongoDB + Mongoose  
+- **Authentication**: Auth.js (NextAuth), Google Auth, Magic Link  
+- **Payments**: PayPal, Stripe  
+- **Deployment**: Vercel, GitHub  
+- **Others**: Uploadthing, Resend, Zustand, Zod  
+
+---
+
+## ✨ Features  
+
+### 🛍 Customer-Facing  
+- Responsive design with **Tailwind + Shadcn UI**  
+- Header, Footer, Sidebar, Search, and Category Navigation  
+- Product listing with **sliders & carousels** (Today’s Deals, Best Sellers)  
+- **Quick View Modals** using Next.js Parallel + Intercepting Routes  
+- Product details with reviews and ratings  
+- Add-to-cart with **server-side cookies**  
+- Checkout with **PayPal & Stripe integration**  
+- Order placement, payment, and history tracking  
+- Customer dashboard: Update profile, track orders  
+
+### 🔐 Authentication  
+- Sign up / Sign in with email  
+- Google OAuth & Magic Link  
+- Secure sessions with Auth.js + MongoDB Adapter  
+
+### 📊 Admin Dashboard  
+- Manage products (Create, Update, Delete)  
+- Manage orders (Mark as Paid / Delivered)  
+- Manage users (Edit roles, Update info)  
+- Website CMS (create/update pages)  
+- Settings & multilingual support (next-intl)  
+- **Interactive charts** with Recharts  
+
+---
+
+## 📂 Project Structure  
+
+- **Frontend** → Next.js (App Router + Server Components)  
+- **Backend** → Next.js Server Actions (no REST API needed)  
+- **Database** → MongoDB with Mongoose models  
+- **Auth** → NextAuth (Auth.js) with MongoDB adapter  
+- **Payments** → PayPal & Stripe SDKs  
+- **State Management** → Zustand + React Hook Form + Zod  
+
+---
+
+## 📘 Lessons / Roadmap  
+
+This project covers **37 lessons**, from setup to advanced features:  
+
+1. Create Next.js App  
+2. Layout (Header, Footer, Sidebar)  
+3. Home page with Carousel & Sliders  
+4. Connect MongoDB & Seed Products  
+5. Product Details Page  
+6. Cart Management & Sidebar  
+7. Authentication (Email, Google, Magic Link)  
+8. Checkout + Place Order  
+9. Pay with **PayPal** & **Stripe**  
+10. Customer Dashboard (Profile, Orders)  
+11. Admin Dashboard (Products, Orders, Users)  
+12. CMS Pages, Settings, Multilingual  
+
+…and much more 🚀  
+
+---
+
+## ⚡ Getting Started  
+
+### 1️⃣ Clone the repository  
 ```bash
+git clone <repo-url>
+cd nxtcart
+2️⃣ Create Environment File
+Copy .example-env → .env.local and set:
+
+env
+Copy code
+MONGODB_URI=your_mongodb_connection_string
+3️⃣ Setup Database
+Cloud MongoDB → Create a cluster
+Local MongoDB → Download & Install
+
+4️⃣ Seed Data
+bash
+Copy code
+npm run seed
+5️⃣ Install & Run
+bash
+Copy code
+npm install --legacy-peer-deps
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+6️⃣ Access App
+Open http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Admin Login
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Email: admin@example.com
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Password: 123456
 
-## Learn More
+📦 Key Dependencies
+UI & Styling → Tailwind, Shadcn, Radix UI, Lucide Icons
 
-To learn more about Next.js, take a look at the following resources:
+Forms & State → React Hook Form, Zustand, Zod
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Payments → Stripe, PayPal
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Auth → NextAuth (Auth.js) with MongoDB Adapter
 
-## Deploy on Vercel
+Emails & Uploads → Resend, Uploadthing, React Email
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Charts → Recharts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# nxt-cart
+Markdown Support → React Markdown, Markdown Editor Lite
+
+🎯 Learning Outcomes
+By building nxtcart, you’ll learn how to:
+
+Build scalable apps with Next.js 15 + Server Components
+
+Create beautiful UIs with Shadcn UI + Tailwind
+
+Implement secure authentication & OAuth (NextAuth)
+
+Work with MongoDB & Mongoose effectively
+
+Validate forms with React Hook Form + Zod
+
+Manage cart & state with cookies + Zustand
+
+Integrate payments (PayPal & Stripe)
+
+Build Customer & Admin Dashboards
+
+Implement multilingual support with next-intl
+
+Deploy production-ready apps to Vercel
+
+🚀 Deployment
+Hosted on Vercel for serverless, scalable deployments.
+
+CI/CD setup via GitHub Actions + Vercel integration.
+
+📜 License
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute it.
