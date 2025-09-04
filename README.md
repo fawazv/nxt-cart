@@ -92,76 +92,82 @@ This project covers **37 lessons**, from setup to advanced features:
 ```bash
 git clone <repo-url>
 cd nxtcart
-2️⃣ Create Environment File
-Copy .example-env → .env.local and set:
+```
 
-env
-Copy code
+### 2️⃣ Create Environment File  
+Copy `.example-env` → `.env.local` and set:  
+```env
 MONGODB_URI=your_mongodb_connection_string
-3️⃣ Setup Database
-Cloud MongoDB → Create a cluster
-Local MongoDB → Download & Install
+```
 
-4️⃣ Seed Data
-bash
-Copy code
+### 3️⃣ Setup Database  
+
+**Cloud MongoDB** → [Create a cluster](https://www.mongodb.com/)  
+**Local MongoDB** → [Download & Install](https://www.mongodb.com/try/download/community)  
+
+### 4️⃣ Seed Data  
+```bash
 npm run seed
-5️⃣ Install & Run
-bash
-Copy code
+```
+
+### 5️⃣ Install & Run  
+```bash
 npm install --legacy-peer-deps
 npm run dev
-6️⃣ Access App
-Open http://localhost:3000
+```
 
-Admin Login
+### 6️⃣ Access App  
+- Open [http://localhost:3000](http://localhost:3000)  
 
-Email: admin@example.com
+**Admin Login**  
+- Email: `admin@example.com`  
+- Password: `123456`  
 
-Password: 123456
+---
 
-📦 Key Dependencies
-UI & Styling → Tailwind, Shadcn, Radix UI, Lucide Icons
+## 📦 Key Dependencies  
 
-Forms & State → React Hook Form, Zustand, Zod
+- **UI & Styling** → Tailwind, Shadcn, Radix UI, Lucide Icons  
+- **Forms & State** → React Hook Form, Zustand, Zod  
+- **Payments** → Stripe, PayPal  
+- **Auth** → NextAuth (Auth.js) with MongoDB Adapter  
+- **Emails & Uploads** → Resend, Uploadthing, React Email  
+- **Charts** → Recharts  
+- **Markdown Support** → React Markdown, Markdown Editor Lite  
 
-Payments → Stripe, PayPal
+---
 
-Auth → NextAuth (Auth.js) with MongoDB Adapter
+## 🎯 Learning Outcomes  
 
-Emails & Uploads → Resend, Uploadthing, React Email
+By building nxtcart, you’ll learn how to:  
+- Build scalable apps with **Next.js 15 + Server Components**  
+- Create beautiful UIs with **Shadcn UI + Tailwind**  
+- Implement secure authentication & OAuth (NextAuth)  
+- Work with **MongoDB & Mongoose** effectively  
+- Validate forms with **React Hook Form + Zod**  
+- Manage cart & state with **cookies + Zustand**  
+- Integrate payments (**PayPal & Stripe**)  
+- Build **Customer & Admin Dashboards**  
+- Implement multilingual support with **next-intl**  
+- Deploy production-ready apps to **Vercel**  
 
-Charts → Recharts
+---
 
-Markdown Support → React Markdown, Markdown Editor Lite
+## 🚀 Deployment  
 
-🎯 Learning Outcomes
-By building nxtcart, you’ll learn how to:
+- Hosted on **Vercel** for serverless, scalable deployments.  
+- CI/CD setup via **GitHub Actions + Vercel integration**.  
 
-Build scalable apps with Next.js 15 + Server Components
+---
 
-Create beautiful UIs with Shadcn UI + Tailwind
+## 📜 License  
 
-Implement secure authentication & OAuth (NextAuth)
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute it.  
 
-Work with MongoDB & Mongoose effectively
+---
 
-Validate forms with React Hook Form + Zod
-
-Manage cart & state with cookies + Zustand
-
-Integrate payments (PayPal & Stripe)
-
-Build Customer & Admin Dashboards
-
-Implement multilingual support with next-intl
-
-Deploy production-ready apps to Vercel
-
-🚀 Deployment
-Hosted on Vercel for serverless, scalable deployments.
-
-CI/CD setup via GitHub Actions + Vercel integration.
+👨‍💻 Developed with ❤️ by [Your Name]
 
 📜 License
 This project is licensed under the MIT License.
