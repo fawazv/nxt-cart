@@ -65,27 +65,6 @@ It provides a modern, scalable, and production-ready shopping platform with feat
 
 ---
 
-## 📘 Lessons / Roadmap  
-
-This project covers **37 lessons**, from setup to advanced features:  
-
-1. Create Next.js App  
-2. Layout (Header, Footer, Sidebar)  
-3. Home page with Carousel & Sliders  
-4. Connect MongoDB & Seed Products  
-5. Product Details Page  
-6. Cart Management & Sidebar  
-7. Authentication (Email, Google, Magic Link)  
-8. Checkout + Place Order  
-9. Pay with **PayPal** & **Stripe**  
-10. Customer Dashboard (Profile, Orders)  
-11. Admin Dashboard (Products, Orders, Users)  
-12. CMS Pages, Settings, Multilingual  
-
-…and much more 🚀  
-
----
-
 ## ⚡ Getting Started  
 
 ### 1️⃣ Clone the repository  
